@@ -113,6 +113,138 @@ Para saber los cambios que se han hecho
 
 Ejercicio 15: Fusionar Ramas
 ¿Qué comando usas para fusionar ramas en Git?
-git merge
+git merge 'nombre-rama'
 
 ¿Qué sucede si hay conflictos durante la fusión?
+Git identifica los conflictos en los archivos y no se hace la fusión
+
+Ejercicio 16: Resolver Conflictos entre Ramas
+¿Qué ocurre cuando Git detecta un conflicto durante la fusión?
+Git mostrará la lista de archivos en conflicto para editarlos
+
+¿Cómo puedes resolver un conflicto en Git?
+Se debe editar, eliminar marcadores (<<<<, ====, >>>>) y guardar
+
+Ejercicio 17: Crear un Archivo .gitignore
+¿Qué es un archivo .gitignore y para qué sirve?
+Es un archivo que sirve para ignorar los archivos y directorios que se especifiquen
+
+¿Cómo puedes especificar qué tipos de archivos deben ser ignorados?
+con sus extensiones, por ejemplo: '.tmp', '.log', etc
+
+
+Ejercicio 18: Configurar Git para Ignorar Cambios en un Archivo Específico
+¿Cómo puedes hacer que Git ignore los cambios en un archivo específico sin eliminarlo del repositorio?
+Incluyéndolo dentro del archivo .gitignore
+
+¿En qué situaciones sería útil esta técnica?
+Cuándo no queremos que se muestren los cambios en remoto cómo los archivos temporales, de configuración, contraseñas, claves, etc.
+
+
+Ejercicio 19: Clonar un Repositorio Remoto
+¿Qué comando usas para clonar un repositorio remoto?
+git clone
+
+¿Qué diferencia hay entre clonar un repositorio y crear uno nuevo?
+Al clonarlo se descarga todo el repositorio con sus archivos existentes y al hacer uno nuevo es para iniciar un proyecto desde cero
+
+
+Ejercicio 20: Conectarte a GitHub con SSH
+¿Qué es SSH y por qué es importante para trabajar con GitHub?
+Es una clave para conectarse y autenticarse a repositorios remotos, con ella ya no se necesita dar nombre de usuario una vez asociada
+
+¿Cómo puedes generar una clave SSH en tu computadora?
+Usando git bash con los siguientes comandos:
+ssh-keygen -t ed25519 -C "your_email@example.com" y para verla tenemos que usar cat ed25519.pub
+
+
+Ejercicio 21: Subir Cambios Locales a GitHub
+¿Qué comando usas para asociar un repositorio local con uno remoto?
+git remote add origin
+
+¿Qué comando usas para subir cambios locales a un repositorio remoto?
+git push -u origin main
+
+Ejercicio 22: Actualizar tu Repositorio Local desde GitHub
+¿Qué comando usas para descargar cambios del repositorio remoto?
+Primero nos movemos a la rama que queramos
+git checkout 'nombre-rama'
+
+Después se hace:
+git pull origin 'nombre-rama'
+
+¿Qué pasa si hay conflictos al sincronizar los cambios?
+Git informará en donde están y debemos modificarlo manualmente
+
+
+Ejercicio 23: Crear una Rama en GitHub
+¿Cómo puedes subir una rama local a un repositorio remoto?
+Creamos la rama y nos movemos a ella:
+git checkout -b 'nombre-rama'
+
+y después la subimos al main
+git push origin 'nombre-rama'
+
+¿Cómo puedes verificar que la rama ha sido creada correctamente en GitHub?
+En GitHub buscamos las ramas que tenemos y ahí debe estar el nombre de la que creamos localmente
+
+Ejercicio 24: Eliminar una Rama Local
+¿Qué comando usas para eliminar una rama local?
+git Branch -d 'nombre-rama'
+
+¿Es posible recuperar una rama eliminada?
+Sí, cuando los commits no hayan sido eliminados o sobreescritos.
+Se busca el hash del último commit usando:
+git reflog
+
+Teniendo el hash se hace:
+git checkout -b 'nombre-rama' 'hash-commit'
+
+
+Ejercicio 25: Eliminar una Rama Remota
+¿Cómo puedes eliminar una rama remota?
+git push origin --delete 'nombre-rama'
+
+¿Qué precauciones debes tomar antes de eliminar una rama remota?
+Verificar que no haya nada importante dentro de ella, que nadie esté trabajando en ella, consultar con el equipo, hacer un backup
+
+
+Ejercicio 26: Crear una Pull Request en GitHub
+¿Qué es una pull request y para qué sirve?
+Es una propuesta de cambios en el código del proyecto que se envía para que sea revisado, aprobado y fusionado con la rama principal o cualquier otra
+
+¿Qué información debes incluir en una pull request?
+Título que describa lo que se ha hecho
+Descripción
+Cambios
+Pruebas 
+
+
+Ejercicio 27: Revisar y Comentar una Pull Request
+¿Cómo puedes revisar una pull request en GitHub?
+En el repositorio de GitHub, aparece una pestaña con el nombre Pull requests y aparece una lista de todas
+
+¿Qué tipo de comentarios son útiles en una revisión?
+Hacer comentarios positivos, hacer sugerencias de mejora, identificar errores, etc
+
+
+Ejercicio 28: Fusión Automática de una Pull Request
+¿Cuándo puedes fusionar una pull request automáticamente?
+Cuándo no hay conflictos, ya han sido aprobadas las revisiones
+
+¿Qué sucede después de fusionar una pull request?
+Los cambios realizados se reflejan en la rama destino, así como sus commits
+
+Ejercicio 29: Descartar Cambios Locales
+¿Qué comando usas para descartar cambios locales?
+git reset HEAD 'nombre-archivo'
+
+¿Cuándo es útil descartar cambios locales?
+Cuándo los cambios hechos generan errores, cuándo se añadieron archivos incorrectos
+
+Ejercicio 30: Restaurar un Commit Anterior
+¿Qué comando usas para restaurar un commit anterior?
+git reset o git revert
+
+¿Qué precauciones debes tomar al restaurar un commit anterior?
+Se podrían borrar los cambios no confirmados, asegurarse que no hay datos importantes en el área de preparación, hacer copia de seguridad antes de modificar algún commit
