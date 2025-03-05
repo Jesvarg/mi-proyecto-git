@@ -6,3 +6,6 @@
 
 # Ignorar archivos .env
 *.env
+
+# Ignorar contraseñas
+contraseñas.txt
