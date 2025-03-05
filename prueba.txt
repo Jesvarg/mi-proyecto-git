@@ -5,6 +5,7 @@ git --versión
 Si no tienes Git instalado, ¿qué opciones tienes para instalarlo?
 Su página web oficial
 
+
 Ejercicio 2: Crear un Directorio de Trabajo
 ¿Qué comando usas para crear un nuevo directorio?
 mkdir
@@ -12,11 +13,13 @@ mkdir
 ¿Cómo puedes cambiar a un directorio específico desde la terminal?
 cd
 
+
 Ejercicio 3: Inicializar un Repositorio Git
 ¿Qué comando usas para inicializar Git en un directorio?
 git init
 
 ¿Cómo puedes confirmar que Git ha sido inicializado correctamente?
+
 
 
 Ejercicio 4: Comprobar el Estado del Repositorio
@@ -26,12 +29,14 @@ git status
 ¿Qué significa cuando Git dice que no hay archivos rastreados?
 Cuándo no se han agregado archivos nuevos, "git add"
 
+
 Ejercicio 5: Crear un Archivo y Verificar el Estado
 ¿Qué comando usas para crear un archivo nuevo desde la terminal?
 touch
 
 ¿Qué diferencia observas en el estado del repositorio después de crear el archivo?
 Ninguno, porque se trabaja localmente
+
 
 Ejercicio 6: Añadir un Archivo al Área de Preparación
 ¿Qué comando usas para añadir un archivo al área de preparación?
@@ -40,12 +45,14 @@ git add
 ¿Qué significa añadir un archivo al área de preparación?
 Se añade para después poder subirlo a GitHub
 
+
 Ejercicio 7: Realizar un Commit
 ¿Qué comando usas para realizar un commit?
 git commit -m "mensaje"
 
 ¿Por qué es importante incluir un mensaje claro en cada commit?
 Para saber los cambios realizados
+
 
 Ejercicio 8: Ver el Historial de Commits
 ¿Qué comando usas para ver el historial de commits?
@@ -54,12 +61,14 @@ git log
 ¿Qué información muestra el historial de commits?
 El autor que hizo el commit, su correo, fecha y nombre del commit
 
+
 Ejercicio 9: Crear una Nueva Rama
 ¿Qué comando usas para crear una nueva rama en Git?
 git Branch 'nombre'
 
 ¿Qué diferencia hay entre crear una rama y moverte a ella?
-El comando es diferente, git Branch y git checkout
+El comando es diferente, git branch y git checkout
+
 
 
 Ejercicio 10: Listar Todas las Ramas
@@ -67,3 +76,43 @@ Ejercicio 10: Listar Todas las Ramas
 git branch
 
 ¿Cómo puedes identificar en qué rama estás trabajando actualmente?
+En la consola aparece de color verde en la que estamos actualmente
+
+
+Ejercicio 11: Cambiar a una Rama Existente
+¿Qué comando usas para cambiar de rama?
+git checkout nueva-caracteristica
+
+¿Cómo puedes confirmar en qué rama estás trabajando?
+git Branch o git status
+
+
+Ejercicio 12: Crear y Cambiar a una Nueva Rama en un Solo Paso
+¿Qué comando permite crear y cambiar a una nueva rama en un solo paso?
+git checkout -b 'nombre-rama'
+
+¿Cuál es la ventaja de usar este comando?
+En un sólo comando creas y te mueves a esa misma rama
+
+
+Ejercicio 13: Añadir Archivos al Área de Preparación con un Comando Abreviado
+¿Qué comando abreviado puedes usar para añadir todos los cambios al área de preparación?
+git add .
+
+¿Qué ventajas tiene usar este comando en lugar de añadir archivos individualmente?
+Puedes añadir todo con un solo comando
+
+
+Ejercicio 14: Realizar un Commit con un Mensaje Descriptivo
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje descriptivo"
+
+¿Por qué es importante escribir mensajes descriptivos en los commits?
+Para saber los cambios que se han hecho
+
+
+Ejercicio 15: Fusionar Ramas
+¿Qué comando usas para fusionar ramas en Git?
+git merge
+
+¿Qué sucede si hay conflictos durante la fusión?
