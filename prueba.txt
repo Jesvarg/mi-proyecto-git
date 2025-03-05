@@ -1,0 +1,69 @@
+Ejercicio 1: Verificar la Instalación de Git
+¿Qué comando debes usar para verificar la versión de Git?
+git --versión
+
+Si no tienes Git instalado, ¿qué opciones tienes para instalarlo?
+Su página web oficial
+
+Ejercicio 2: Crear un Directorio de Trabajo
+¿Qué comando usas para crear un nuevo directorio?
+mkdir
+
+¿Cómo puedes cambiar a un directorio específico desde la terminal?
+cd
+
+Ejercicio 3: Inicializar un Repositorio Git
+¿Qué comando usas para inicializar Git en un directorio?
+git init
+
+¿Cómo puedes confirmar que Git ha sido inicializado correctamente?
+
+
+Ejercicio 4: Comprobar el Estado del Repositorio
+¿Qué comando usas para comprobar el estado del repositorio?
+git status
+
+¿Qué significa cuando Git dice que no hay archivos rastreados?
+Cuándo no se han agregado archivos nuevos, "git add"
+
+Ejercicio 5: Crear un Archivo y Verificar el Estado
+¿Qué comando usas para crear un archivo nuevo desde la terminal?
+touch
+
+¿Qué diferencia observas en el estado del repositorio después de crear el archivo?
+Ninguno, porque se trabaja localmente
+
+Ejercicio 6: Añadir un Archivo al Área de Preparación
+¿Qué comando usas para añadir un archivo al área de preparación?
+git add
+
+¿Qué significa añadir un archivo al área de preparación?
+Se añade para después poder subirlo a GitHub
+
+Ejercicio 7: Realizar un Commit
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje"
+
+¿Por qué es importante incluir un mensaje claro en cada commit?
+Para saber los cambios realizados
+
+Ejercicio 8: Ver el Historial de Commits
+¿Qué comando usas para ver el historial de commits?
+git log
+
+¿Qué información muestra el historial de commits?
+El autor que hizo el commit, su correo, fecha y nombre del commit
+
+Ejercicio 9: Crear una Nueva Rama
+¿Qué comando usas para crear una nueva rama en Git?
+git Branch 'nombre'
+
+¿Qué diferencia hay entre crear una rama y moverte a ella?
+El comando es diferente, git Branch y git checkout
+
+
+Ejercicio 10: Listar Todas las Ramas
+¿Qué comando usas para listar todas las ramas en Git?
+git branch
+
+¿Cómo puedes identificar en qué rama estás trabajando actualmente?
